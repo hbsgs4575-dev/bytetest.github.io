@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Laptop — Notebooks & Ultrabooks | COMBYTE</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+	<link rel="stylesheet" href="assets/css/fontawesome-all.min.css" />
+	<link rel="stylesheet" href="assets/css/ecommerce.css" />
+</head>
+<body class="store-page">
+	<div class="topbar">
+		<div class="wrap">
+			<span class="topbar-msg">Free shipping on orders above $99 · 2-Year warranty on select items</span>
+			<div class="topbar-right">
+				<a href="#">Track Order</a>
+				<a href="#">Support</a>
+			</div>
+		</div>
+	</div>
+
+	<header class="navbar" id="navbar">
+		<div class="wrap navbar-inner">
+			<a href="index.html" class="logo">
+				<span class="logo-mark">C</span>
+				COMBYTE
+			</a>
+			<button type="button" class="nav-toggle" aria-label="Menu" aria-expanded="false">
+				<span></span><span></span><span></span>
+			</button>
+			<nav class="nav-links" id="nav-links">
+				<a href="index.html">Home</a>
+				<a href="pc.html">PC</a>
+				<a href="laptop.html" class="active">Laptop</a>
+				<a href="cctv.html">CCTV</a>
+				<a href="printers.html">Printers</a>
+				<a href="peripherals.html">Peripherals</a>
+			</nav>
+			<div class="nav-actions">
+				<a href="#" class="nav-icon" aria-label="Search"><i class="fas fa-search"></i></a>
+				<a href="#" class="nav-icon" aria-label="Cart"><i class="fas fa-shopping-cart"></i></a>
+			</div>
+		</div>
+	</header>
+
+	<main>
+		<section class="category-page-header">
+			<div class="wrap">
+				<nav class="breadcrumb">
+					<a href="index.html">Home</a>
+					<span class="sep">/</span>
+					<span>Laptop</span>
+				</nav>
+				<h1 class="category-page-title">Laptop — Notebooks & Ultrabooks</h1>
+				<p class="category-page-desc">Business laptops, gaming notebooks, and ultrabooks.</p>
+			</div>
+		</section>
+
+		<section class="section section-alt">
+			<div class="wrap">
+				<div class="product-grid">
+					<article class="product-card">
+						<a href="#" class="product-img-wrap">
+							<img src="images/pic02.jpg" alt="Ultrabook 14 inch" />
+						</a>
+						<div class="product-body">
+							<span class="product-cat">Laptop</span>
+							<h3 class="product-title"><a href="#">Ultrabook 14" — 32GB RAM</a></h3>
+							<div class="product-price"><s>$999</s> $849.00</div>
+							<a href="https://wa.me/1234567890?text=Hi%2C%20I%20want%20to%20buy%3A%20Ultrabook%2014%22%2032GB%20RAM%20(%24849)" class="btn-buy" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span>Buy on WhatsApp</span></a>
+						</div>
+					</article>
+					<article class="product-card">
+						<a href="#" class="product-img-wrap">
+							<img src="images/pic06.jpg" alt="Gaming Laptop" />
+						</a>
+						<div class="product-body">
+							<span class="product-cat">Laptop</span>
+							<h3 class="product-title"><a href="#">Gaming Laptop 15.6" — RTX 4060</a></h3>
+							<div class="product-price">$1,199.00</div>
+							<a href="https://wa.me/1234567890?text=Hi%2C%20I%20want%20to%20buy%3A%20Gaming%20Laptop%2015.6%22%20RTX%204060%20(%241199)" class="btn-buy" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i><span>Buy on WhatsApp</span></a>
+						</div>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="wrap">
+			<div class="footer-grid">
+				<div class="footer-brand">
+					<a href="index.html" class="logo footer-logo">
+						<span class="logo-mark">C</span>
+						COMBYTE
+					</a>
+					<p>Your trusted source for PCs, laptops, CCTV, and peripherals.</p>
+				</div>
+				<div class="footer-col">
+					<h4>Shop</h4>
+					<ul>
+						<li><a href="pc.html">PC</a></li>
+						<li><a href="laptop.html">Laptop</a></li>
+						<li><a href="cctv.html">CCTV</a></li>
+						<li><a href="printers.html">Printers</a></li>
+						<li><a href="peripherals.html">Peripherals</a></li>
+					</ul>
+				</div>
+				<div class="footer-col">
+					<h4>Support</h4>
+					<ul>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Warranty</a></li>
+						<li><a href="#">Track Order</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-bottom">&copy; COMBYTE. All rights reserved.</div>
+		</div>
+	</footer>
+
+	<a href="https://wa.me/1234567890?text=Hi%2C%20I%20have%20a%20question" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+	<script>
+		(function() {
+			var toggle = document.querySelector('.nav-toggle');
+			var links = document.getElementById('nav-links');
+			if (toggle && links) {
+				toggle.addEventListener('click', function() {
+					this.classList.toggle('open');
+					links.classList.toggle('open');
+					this.setAttribute('aria-expanded', links.classList.contains('open'));
+				});
+			}
+			var nav = document.getElementById('navbar');
+			if (nav) window.addEventListener('scroll', function() { nav.classList.toggle('scrolled', window.scrollY > 20); });
+		})();
+	</script>
+</body>
+</html>
